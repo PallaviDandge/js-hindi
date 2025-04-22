@@ -12,4 +12,9 @@ accountCity="mumbai"   //not good way declare variable
 
 console.log(accountId);
 
+
+/*
+prefer not to use var because of the issue of functional scope and block scope
+*/
+
 console.table([accountId,accountEmail,accountCity,accountState])
