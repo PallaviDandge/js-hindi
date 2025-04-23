@@ -34,4 +34,29 @@ console.log(stringNumber);
 console.log(typeof stringNumber);
 
 
+//****************************************** Opertaions ***************************************/
 
+let value = 3 ;
+let negValue = -value;
+
+console.log(negValue);
+//-3
+
+let str1 = "pallavi"
+let str2 = "dandge"
+
+let str3 = str1+str2
+console.log(str3);
+
+
+let num1 ,num2,num3
+
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100;
+
+gameCounter++;
+
+console.log(gameCounter);
+
+//prefix and postfix
