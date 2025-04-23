@@ -31,3 +31,28 @@ console.log(typeof myObj);
 
 console.log(typeof myFunction);
 
+// +++++++++++++++++++++++++++++++++++++++
+
+//Memory has 2 types 
+//1 stack (Premitive) -> premitive eans its return the copy of the variable 
+//2 Heap (Non Premitive ) -> its return the reference means the changes will get refelect intob the original place or memory
+
+let MyYoutubeName = "code with Pallavi"
+
+let anotherName = MyYoutubeName
+console.log(anotherName);
+
+anotherName = "chai au code"
+console.log(anotherName);
+console.log(MyYoutubeName);
+
+let userOne ={
+    email:"pdandge@gmail.com",
+    upi:"pbd@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "user2@gmail.com"
+console.log(userOne)
+console.log(userTwo)
