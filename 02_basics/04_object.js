@@ -9,7 +9,12 @@ tinderUser.id = "123"
 tinderUser.name = "nilesh"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+console.log( "tinderUser", tinderUser);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser)); //each key value get converted into the array
+
 
 const regularUser ={
     email : "some@gmail.com",
@@ -59,25 +64,22 @@ const obj4 = Object.assign({}, obj1 ,obj2 ,obj3) ; //this empty object is the ta
  }
 ]
  
-// console.log(users[1].email)
+console.log(users[1].email)
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser)); //each key value get converted into the array
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
 
 const tryDeep = JSON.parse(JSON.stringify(obj1))
-// console.log(tryDeep);
+console.log("tryDeep",tryDeep);
 tryDeep.arr[2] = 12345
 
-const tryShallow = Object.assign({},obj1)
-tryShallow.arr[2] =2234
-// console.log(tryShallow)
+const tryShallow = Object.assign({},obj2)
+tryShallow[2]=2234
+console.log("tryShallow",tryShallow)
 
-// console.log(obj1)
+console.log(obj2)
 
 
 //*** object destructring ***/
